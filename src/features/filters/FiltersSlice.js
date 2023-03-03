@@ -14,7 +14,7 @@ export const filtersSlice = createSlice({
     },
 });
 
-export const { addTask, deleteTask, toggleCompleted } = filtersSlice.actions;
+export const { addTask, deleteTask, toggleCompleted , setStatusFilter} = filtersSlice.actions;
 
 export const selectFilters = (state) => state.filters;
 
