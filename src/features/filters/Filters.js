@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setStatusFilter, selectFilters } from "../filters/FiltersSlice";
-import { statusFilters } from "../filters/StatusFilters";
+import { setStatusFilter, selectFilters } from "./FiltersSlice";
+import { statusFilters } from "./StatusFilters";
 import { Button } from "../../features/button/Button";
 
 
