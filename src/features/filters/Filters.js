@@ -1,13 +1,14 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setStatusFilter, selectFilters } from "./FiltersSlice";
+import { setStatusFilter, selectFilters } from "../filters/FiltersSlice";
 import { statusFilters } from "../filters/StatusFilters";
+import { Button } from "../../features/button/Button";
 
 
 
 export function Filters() {
-    const filters = useSelector(selectFilters);
-    const filter = filters.Object.status;
+    const filter = useSelector(selectFilters);
+    //  const filter = filtersObject.status;
     const dispatch = useDispatch();
     const handleFilterChange = filter => dispatch(setStatusFilter(filter));
 
